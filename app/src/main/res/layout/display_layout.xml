@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pro_bg"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/bm_pro_img"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:background="#673AB7" />
+
+    <TextView
+        android:id="@+id/bm_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Tital"
+        android:layout_toRightOf="@+id/bm_pro_img"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bm_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bm_pro_img"
+        android:layout_below="@+id/bm_product_name"
+        android:text="1000 rs."
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bm_product_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/bm_product_price"
+        android:layout_below="@+id/bm_product_name"
+        android:text="Qty : 20"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bm_pp_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bm_pro_img"
+        android:layout_below="@+id/bm_product_price"
+        android:text="Total : 1000 rs."
+        android:textColor="#32A032"
+        android:textSize="25sp"
+        android:layout_marginLeft="6dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/bm_pro_img"
+        android:layout_below="@id/bm_pp_total">
+
+        <Button
+            android:id="@+id/btn_edt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="22dp"
+            android:background="@drawable/pro_bg"
+            android:layout_marginRight="3dp"/>
+
+        <Button
+            android:id="@+id/btn_dlt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="22dp"
+            android:background="@drawable/pro_bg"
+            android:layout_marginLeft="3dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Shopping App</string>
+    <string name="ttl_activity_login">Login</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/Subloader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loding..."
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/SubForError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Not Found"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:background="#FF0000"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/Sublv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
